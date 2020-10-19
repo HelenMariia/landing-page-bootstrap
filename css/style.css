@@ -1,0 +1,106 @@
+.btn-primary {
+    background-color:#01999A;
+    margin-top: 30px;
+}
+
+.btn-primary:hover { 
+    background-color: rgb(118, 205, 216);
+}
+    
+.btn-secondary {
+    background-color:#01999A;
+}
+
+.tm-bg-color-primary { 
+    background-color: #76cdd8;
+}
+
+.tm-bg-color-secondary { 
+    background-color: #01999A; 
+}
+
+.tm-text-color-primary { 
+    color: #76cdd8; 
+}
+
+section:nth-child(2) {
+    flex-direction: row-reverse;
+}
+
+q.tm-quote:nth-child(2) {
+    font-size: 18px;
+    font-style: normal;
+}
+
+.tm-card::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 50px solid transparent;
+    border-top: 50px solid #76cdd8;
+    border-right: 50px solid #76cdd8;
+    opacity: 0;
+}
+    
+.tm-card:hover::before{
+    opacity: 1;
+}
+    
+.tm-card.tm-col-md-reverse::before{
+    left: 0;
+    right: inherit;
+    border-left: 50px solid #76cdd8;
+    border-right: 50px solid transparent;
+}
+
+.tm-card:hover {
+    color: #76cdd8;
+} 
+   
+.img-fluid:hover {
+    transform: scale(1.1);
+} 
+    
+.tm-mb-30 {
+    margin-bottom: 30px;
+}
+
+.tm-form-header {
+    background-color: #76cdd8;
+}
+        
+.tm-pricing-table {
+    border: 1px solid#01999A;
+}
+    
+.tm-pricing-table:hover {
+    box-shadow: 0 0 0 0.2rem #24d4d4;
+}
+
+.tm-pricing-table:hover .btn-secondary {
+    background-color:  #24d4d4;
+}
+    
+.tm-pricing-table:hover .tm-pricing-discount {
+    display: inline-block;
+}
+    
+.tm-pricing-discount__star {
+    color: red;
+}
+    
+.tm-pricing-discount__text {
+    color: #24d4d4;
+}
+    
+form {
+    transform: scale(1.1);
+    z-index: 2;
+}
+    
+.form-control:focus,
+select:focus {
+    border-color: #24d4d4;
+    box-shadow: 0 0 0 0.2rem #24d4d4;
+}
